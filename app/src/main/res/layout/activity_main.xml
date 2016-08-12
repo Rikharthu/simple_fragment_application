@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uv.simplefragmentapplication.MainActivity">
+
+    <FrameLayout android:layout_height="0dp"
+                 android:layout_width="match_parent"
+                 android:id="@+id/fragment_container"
+                 tools:background="#ff0000"
+    android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        tools:background="#00ff00">
+
+        <Button
+            android:id="@+id/fragment1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment A"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/fragment2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment B"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
